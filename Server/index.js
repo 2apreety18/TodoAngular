@@ -5,14 +5,14 @@ const bodyParser = require('koa-bodyparser');
 const router = require('./router');
 const cors = require('koa-cors2');
 
-app.use((ctx, next) => {
-  next();
-  //Something happens in next and comes back here.
+// app.use((ctx, next) => {
+//   next();
+//   //Something happens in next and comes back here.
 
-  if(ctx.status === 404) {
-    //deal with the 404
-  }
-})
+//   if(ctx.status === 404) {
+//     //deal with the 404
+//   }
+// })
   
 app.use(cors());
 app.use(bodyParser());
